@@ -23,6 +23,7 @@ margin: 0;
 padding: 0;
 background: #f28577;
 color: #F9F9F9;
+overflow: hidden;
 }
 
 
@@ -71,49 +72,66 @@ color: #F9F9F9;
         color: #ffffff;
 		
 	}
-.Welcome {
+.welcome {
    background: #518c0d;
-   width: 100%;
+   /*width: 100%;*/
    margin: auto;
-   height: 30%;
-   padding: 20px;
+   height: 80%;
+   padding: 30px;
 }
 
-.Welcome h2{
+.welcome h2{
 	color: #ffffff;
 	font-family: 'Baloo Paaji 2', cursive;
 	font-size: 25px;
 
 }
-.Welcome .Right{
+.welcome .right{
 	display: flex;
+
 }
-.Welcome .Right img{
+.welcome .right img{
 	margin-right: 10px;
     height: 200px;
 }
 
-.Welcom .Right p{
+.welcome .right p{
+
 		align-self: center;
-        font-size: 30px;
+        font-size: 20px;
+        color: black;
         line-height: 1.5;
+        overflow: hidden;
+        text-overflow: clip;
 }
 
-footer.Left {
+footer{
+	width: 100%
+	padding-right: 10px;
+	padding-left: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.left {
 	position: relative;
+	display: flex;
+	justify-content: space-between;
 	background: #f28577;
 	color:#000000;
-	width: 100%;
-	margin: 10px;
-	height: 0px;
-	top: 15px;
-	
+	margin-top: 20px;
+	padding-top:20px; 
+	padding-bottom:10px;
+		
 }
- p{
+ .bar {
+ 	display: flex;
+ 	flex-wrap: wrap;
+ 	list-style: none;
 	font-family:'Baloo Paaji 2', cursive;
-	font-size: 150%;
-	margin: 13px;
-	text-align: left; 
+	font-size: 100%;
+	margin-top: 100px;
+	margin-bottom: 0;
+	padding-left: 650px;
 	color: #0a0a0a;
 
 }
@@ -141,13 +159,13 @@ footer.Left {
  .banner .links ul li {
   margin-bottom: 30px;
 }
-  .Welcome .Right {
+  .welcome .right {
     flex-flow: row wrap;
   }
-  .Welcome .Right img {
+  .welcome .right img {
     flex-basis: 100%;
   }
-  footer.Left{
+  .footer.bar{
   	margin-top: 20px;
   }
 
@@ -165,20 +183,29 @@ footer.Left {
     </ul>
   </div>
 </div>
-<section class="Welcome">
+<section class="welcome">
 	<h2> Welcome </h2>
-	<div class="Right">
+	<div class="right">
 	<img src="Damilare.jpg">
 	<p> Hi, I'm Olagbende Damilare. I'm excited to launch my first major website since i began to learn web development in February, 2020. This is my page, In here, you will find my gallery quiet fascinating with beautiful pictures of my mum, my nieces and nephews. Also you will find funny videos and inspiring audios as well as how I keep track of birthdays as we celebrate as one big happy Family. Kindly leave me a comment via the contact form. I will appreciate feedback. #WorkInProgress 
 	</p>
 </div>
 </section>
-<footer class="Left">
-	&copy; Copyright 2020
-	<p>Social</p>
-	<a href="https://twitter.com/funkyshinaayo" title= "visit my twitter page"><i class="fa fa-twitter"></i></a>
-	<a href="https://www.linkedin.com/in/damilare-olagbende-24b418140" title="visit my linkedin page" ><i class="fa fa-linkedin"></i></a>
-	<a href="https://github.com/DamilareRichard" title="visit my github page" ><i class="fa fa-github"></i></a>
-</footer>
+<div class="footer">
+	<div class="left">
+		<ul class="bar">
+			<li> &copy; Copyright 2020</li> 
+			<li><a href="https://twitter.com/funkyshinaayo" title= "visit my twitter page"><i class="fa fa-twitter"></i></a></li>
+			<li><a href="https://www.linkedin.com/in/damilare-olagbende-24b418140" title="visit my linkedin page" ><i class="fa fa-linkedin"></i></a></li>
+			<li><a href="https://github.com/DamilareRichard" title="visit my github page" ><i class="fa fa-github"></i></a></li>
+		</ul>
+	</div>
+</div>
 </body>
 </html>
+
+
+	
+	
+	
+	

@@ -6,6 +6,8 @@
 	<title>Video</title>
 </head>
 <style type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@500&display=swap');
 *{
 	box-sizing: border-box;
 	-moz-
@@ -21,22 +23,72 @@ body{
 	background: -webkit-linear-gradient(#6fbd90 0%, #5c706b 100%);
 	background: linear-gradient (#6fbd90 0%, #5c706b 100%);
 }
-h2{
-	font-family: 'Baloo Paaji 2', cursive;
-	font-size: 50px;
-	color: #211f1d;
-	width: 50%;
-	margin: auto;
-
-	
+.banner {
+  width: 100%;
+  margin: auto;
+  min-height: 200px;
+  background: #f28577;
+  color: #f0ebec;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
-h2:hover{
-	border-radius: 10px;
-	opacity: 1,
+
+.banner h1{
+	color: #141414;
+	font-family: 'Baloo Paaji 2', cursive;
+	font-variant: normal;
+	font-size: 150%;
+	letter-spacing: .5rem;
+	height: 20px;
+	text-decoration: none;
+	margin-top: 20px;
+	margin-bottom: 30px;
+
+}
+.banner .links ul{
+	display: flex;
+	flex-wrap: wrap;
+	list-style-type: none;
+}
+
+.banner .links ul li a {
+	margin: .5rem;
+  	color: #84d404;
+  	text-decoration: none;
+  	font-size: 20px;
+  	background: #f7f7f5;
+  	padding: .7rem;
+  	border-radius: 5px;
+  	transition: 500ms all linear;
+}
+.banner .links ul li a:hover{
+		background: #0a360c;
+        color: #ffffff;
+		
+	}
+
+.active {
+  color: #46A049;
+  background: #C50707;
+  box-shadow:2px 2px 2px #000000;
+  transform: translate(0, -.5rem);
+}
+h2{
+	margin-top: 10px;
+	margin-left: 50px;
+	text-align: center;
+	font-family: 'Baloo Paaji 2', cursive;
 }
 video  {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	list-style: none
+
 	background-color: #857667;
-	border-radius: 10px;
+	border-radius: 5px;
 }
 audio{
 	background-color: #474039;
@@ -46,12 +98,25 @@ figcaption{
 	color: #8a9c92;
 	width: 20%;
 }
-
+@media screen and (max-width: 600px) {
+ .banner .links ul li {
+  margin-bottom: 30px;
+}
 
 </style>
 <body>
-<h2> Audio and Video</h2>
-
+<div class="banner">
+	<h1> ONE FAMILY</h1>
+  <div class="links">
+    <ul>
+      <li><a href="Gallery.html"> Gallery </a></li>
+      <li><a href="Calendar.html"> Calendar </a></li>
+      <li><a href="Media.html" class="active">Video/Audio</a></li>
+      <li><a href="Contact.html"> Contact </a> </li>
+    </ul>
+  </div>
+</div>
+<h2> Video/Audio</h2>
 <video width="400" height=" 320" controls>
 	<source src="Video/Olamide's en aja oba.mp4" type="Video/mp4"> Your browser does not support video</video>
 <video width="400" height=" 320" controls>
