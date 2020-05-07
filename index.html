@@ -5,13 +5,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<title>	ONE FAMILY </title>
-	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
  
 <style type="text/css">
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@500&display=swap');
-*{
+
+*{	
 -moz-
 -webkit-
 -o-
@@ -21,9 +22,9 @@ box-sizing: border-box;
 body{
 margin: 0;
 padding: 0;
-background: #f28577;
+background: linear-gradient(to right top, #16a085, #f4d03f );
 color: #F9F9F9;
-overflow: hidden;
+height: 80%;
 }
 
 
@@ -31,7 +32,7 @@ overflow: hidden;
   width: 100%;
   margin: auto;
   min-height: 200px;
-  background: #f28577;
+  background: linear-gradient(to right top, #ff6e7f, #bfe9ff);  
   color: #f0ebec;
   display: flex;
   align-items: center;
@@ -44,6 +45,7 @@ overflow: hidden;
 	font-family: 'Baloo Paaji 2', cursive;
 	font-variant: normal;
 	font-size: 150%;
+	font-weight: 700;
 	letter-spacing: .5rem;
 	height: 20px;
 	text-decoration: none;
@@ -73,17 +75,17 @@ overflow: hidden;
 		
 	}
 .welcome {
-   background: #518c0d;
-   /*width: 100%;*/
-   margin: auto;
-   height: 80%;
-   padding: 30px;
+   background: linear-gradient(to right top, #603813, #b29f94 );
+   margin: 5px;
+   min-height: 30vh;
+   padding: 25px;
 }
 
 .welcome h2{
 	color: #ffffff;
 	font-family: 'Baloo Paaji 2', cursive;
 	font-size: 25px;
+	margin-top: 2px;
 
 }
 .welcome .right{
@@ -91,14 +93,14 @@ overflow: hidden;
 
 }
 .welcome .right img{
-	margin-right: 10px;
-    height: 200px;
+	margin-right: 15px;
+    height: 300px;
 }
 
 .welcome .right p{
-
 		align-self: center;
         font-size: 20px;
+        font-family: 'Baloo Paaji 2', cursive;
         color: black;
         line-height: 1.5;
         overflow: hidden;
@@ -109,33 +111,26 @@ overflow: hidden;
 	width: 100%
 	padding-right: 10px;
 	padding-left: 10px;
-	margin-left: auto;
-	margin-right: auto;
+	/*margin-left: auto;
+	margin-right: auto;*/
 }
-.left {
-	position: relative;
+.left ul {
 	display: flex;
-	justify-content: space-between;
-	background: #f28577;
-	color:#000000;
-	margin-top: 20px;
-	padding-top:20px; 
-	padding-bottom:10px;
-		
-}
- .bar {
- 	display: flex;
- 	flex-wrap: wrap;
- 	list-style: none;
-	font-family:'Baloo Paaji 2', cursive;
-	font-size: 100%;
-	margin-top: 100px;
-	margin-bottom: 0;
-	padding-left: 650px;
-	color: #0a0a0a;
-
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	list-style: none;
+	padding: 50px;
+	margin-bottom: 20px;		
 }
 
+.left ul li{
+	margin: 2px;
+	padding: 2px;
+	font-family: sans-serif;
+	font-size: 1rem;
+}
+ 
 .fa-twitter{
   background: #1A91DA;
   color: #FFFFFF;
@@ -155,25 +150,50 @@ overflow: hidden;
   border-radius: 5px;
   padding: 5px;
  }
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 360px) and (max-width: 780px) {
  .banner .links ul li {
   margin-bottom: 30px;
 }
-  .welcome .right {
-    flex-flow: row wrap;
-  }
+ .welcome{
+ 		margin: 5px;
+ 		padding: 5px;
+		min-height: 25vh;
+	}
+.welcome .right p{
+	text-align: left;
+	margin: 0px;
+	font-size: 18px;
+	overflow: hidden;
+    text-overflow: clip
+	}
   .welcome .right img {
     flex-basis: 100%;
   }
-  
+  .footer{
+	margin-top: 0px;								
+  }
+   .left ul{
+   		margin: 0;
+   		padding: 0;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+   }
 
-
+   .left ul li{
+   	margin-bottom: 0px;
+   	margin: 0px;
+   	padding: 0px;
+   }
+}
 </style>
 <body>
 	<div class="banner">
-	<h1> ONE FAMILY </h1>
-  <div class="links">
+	<h1> FAMILY </h1>
+  <div class="links" class="active">
     <ul>
+      <li><a href="index.html"> Home</a></li>
       <li><a href="Gallery.html"> Gallery </a></li>
       <li><a href="Calendar.html"> Calendar </a></li>
       <li><a href="Media.html"> Video/Audio </a></li>
@@ -191,10 +211,10 @@ overflow: hidden;
 </section>
 <div class="footer">
 	<div class="left">
-		<ul class="bar">
+		<ul>
 			<li> &copy; Copyright 2020</li> 
-			<li><a href="https://twitter.com/funkyshinaayo" title= "visit my twitter page"><i class="fa fa-twitter"></i></a></li>
-			<li><a href="https://www.linkedin.com/in/damilare-olagbende-24b418140" title="visit my linkedin page" ><i class="fa fa-linkedin"></i></a></li>
+			<li><a href="https://twitter.com/funkyshinaayo" title= "visit my twitter page"><i class="fa fa-twitter"></i></a></li> <br>
+			<li><a href="https://www.linkedin.com/in/damilare-olagbende-24b418140" title="visit my linkedin page" ><i class="fa fa-linkedin"></i></a></li> <br>
 			<li><a href="https://github.com/DamilareRichard" title="visit my github page" ><i class="fa fa-github"></i></a></li>
 		</ul>
 	</div>

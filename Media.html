@@ -17,17 +17,20 @@
 	padding: 0;
 }
 body{
-	background: #6fbd90;
-	background: -moz-linear-gradient(top,#6fbd90 0%, #5c706b 100%);
-	background: -o-linear-gradient(#6fbd90 0%, #5c706b 100%);
-	background: -webkit-linear-gradient(#6fbd90 0%, #5c706b 100%);
-	background: linear-gradient (#6fbd90 0%, #5c706b 100%);
+	width: 100%;
+	min-height: 100vh;
+	margin: 10px;
+	padding: 10px;
+    background: linear-gradient(to right top, #16a085, #f4d03f );
+    color: #F9F9F9;
+    
 }
+
 .banner {
   width: 100%;
   margin: auto;
   min-height: 200px;
-  background: #f28577;
+  background: linear-gradient(to right top, #ff6e7f, #bfe9ff);
   color: #f0ebec;
   display: flex;
   align-items: center;
@@ -40,6 +43,7 @@ body{
 	font-family: 'Baloo Paaji 2', cursive;
 	font-variant: normal;
 	font-size: 150%;
+	font-weight: 700;
 	letter-spacing: .5rem;
 	height: 20px;
 	text-decoration: none;
@@ -65,8 +69,7 @@ body{
 }
 .banner .links ul li a:hover{
 		background: #0a360c;
-        color: #ffffff;
-		
+        color: #ffffff;	
 	}
 
 .active {
@@ -75,64 +78,110 @@ body{
   box-shadow:2px 2px 2px #000000;
   transform: translate(0, -.5rem);
 }
-h2{
-	margin-top: 10px;
-	margin-left: 50px;
-	text-align: center;
-	font-family: 'Baloo Paaji 2', cursive;
-}
-video  {
+
+.grid{
 	display: flex;
 	flex-direction: column;
-	flex-wrap: wrap;
-	list-style: none
+	justify-content: center;
+	align-items: center;
+	margin: 10px;
+	padding: 5px;
+	width: 100%
 
-	background-color: #857667;
+	}
+h2{
+	color: seagreen;
+	font-size: 20px;
+	font-family: sans-serif;
+	font-weight: bold;
+	text-align: center;
+}
+video{
 	border-radius: 5px;
+	margin-left: 25px;
+	margin-right: 10px;
+	padding: 5px;
+	background: #A5CC82;
+}
+.down{
+	
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center; 
 }
 audio{
-	background-color: #474039;
+	width: 50%;
 	border-radius: 5px;
+	background: darkgrey;
+	padding: 10px;
+	margin-left: 10px;
 }
+
 figcaption{
-	color: #8a9c92;
-	width: 20%;
+	color: #076585; 
+	width: 50%;
+	font-size: 16px;
 }
-@media screen and (max-width: 600px) {
+
+
+@media screen and (min-width: 400px) and (max-width: 780px) {
  .banner .links ul li {
   margin-bottom: 30px;
 }
-
+.grid .down{
+	display: grid;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+video{
+	border-radius: 5px;
+	margin-left: 35px;
+	margin-right: 10px;
+	padding: 5px;
+	background: #A5CC82
+}
+audio{
+	width: 50%;
+	border-radius: 5px;
+	background: darkgrey;
+	padding: 10px;
+	margin-left: 10px;
+}
 </style>
 <body>
 <div class="banner">
-	<h1> ONE FAMILY</h1>
-  <div class="links">
+	<h1> FAMILY</h1>
+  <div class="links" class="active">
     <ul>
+      <li><a href="index.html"> Home</a></li>
       <li><a href="Gallery.html"> Gallery </a></li>
       <li><a href="Calendar.html"> Calendar </a></li>
-      <li><a href="Media.html" class="active">Video/Audio</a></li>
+      <li><a href="Media.html" >Video/Audio</a></li>
       <li><a href="Contact.html"> Contact </a> </li>
     </ul>
   </div>
 </div>
-<h2> Video/Audio</h2>
-<video width="400" height=" 320" controls>
+<h2 class="grid"> Video/Audio</h2>
+<video width="200" height=" 200" controls>
 	<source src="Video/Olamide's en aja oba.mp4" type="Video/mp4"> Your browser does not support video</video>
-<video width="400" height=" 320" controls>
+<video width="200" height="200" controls>
 	<source src="Video/Olamide's Yoruba skills.mp4" type="Video/mp4">Your browser does not support video</video>
 
-<video width="400" height=" 320" controls>
+<video width="200" height=" 200" controls>
 	<source src="Video/Happy Birthday Uncle Dare.mp4" type="Video/mp4">Your browser does not support video</video>
-<video width="400" height=" 320" controls>
+<video width="200" height=" 200" controls>
 	<source src="Video/Winifred and Dad.mp4" type="Video/mp4">Your browser does not support video</video>
-<video width="400" height=" 320" controls>
+<video width="200" height=" 200" controls>
 	<source src="Video/Grandma's 60th Birthday.mp4" type="Video/mp4">Your browser does not support video
 </video>
 
 <hr>
 <!--Adding Audio tag-->
-<figure>
+<figure class="down">
 <figcaption>Oceans by Hillsong</figcaption>
 <audio controls>
 	<source src="Audio/Oceans.mp3" type="Audio/mp3" alt="Oceans"> Your browser does not support audio element </audio>
@@ -149,7 +198,7 @@ figcaption{
 <figcaption>Ire by Adekunle Gold </figcaption>
 <audio controls>
 
-			<source src="Audio/Adekunle_Gold_Ire.mp3" type="Audio/mp3">Your browser does not support audio element</audio>
+	<source src="Audio/Adekunle_Gold_Ire.mp3" type="Audio/mp3">Your browser does not support audio element</audio>
 	</figure>			
 </body>
 </html>

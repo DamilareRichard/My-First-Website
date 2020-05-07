@@ -17,17 +17,13 @@
 	padding: 0;
 }
 body{
-	background: #a1134e;
-	background: -moz-linear-gradient(top,#a1134e 0%, #ffffff 100%);
-	background: -o-linear-gradient(#a1134e 0%, #ffffff 100%);
-	background: -webkit-linear-gradient(#a1134e 0%, #ffffff 100%);
-	background: linear-gradient (#a1134e 0%, #ffffff 100%);
+	background: linear-gradient(to right top, #16a085, #f4d03f );
 }
 .banner {
   width: 100%;
   margin: auto;
   min-height: 200px;
-  background: #f28577;
+  background: linear-gradient(to right top, #ff6e7f, #bfe9ff);
   color: #f0ebec;
   display: flex;
   align-items: center;
@@ -40,6 +36,7 @@ body{
 	font-family: 'Baloo Paaji 2', cursive;
 	font-variant: normal;
 	font-size: 150%;
+	font-weight: 700;
 	letter-spacing: .5rem;
 	height: 20px;
 	text-decoration: none;
@@ -74,31 +71,57 @@ body{
   box-shadow:2px 2px 2px #000000;
   transform: translate(0, -.5rem);
 	  }
-h2{
-	margin-top: 10px;
-	margin-left: 50px;
-	text-align: center;
-	font-family: 'Baloo Paaji 2', cursive
-	width:30%;
-}
-iframe{
+.calendar{
 	display: flex;
 	flex-wrap: wrap;
+	margin-top: 10px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	/*margin-left: 50px;*/
+	text-align: center;
+	font-family: 'Baloo Paaji 2', cursive
+	width: 20%;
+}
+h2{
+	font-size: 25px;
+	font-weight: 300px;
+	color: #536976;
+	}
+iframe{
+	margin-left: 120px;
 	width: 70%	
 }
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 360px) and (max-width: 780px) {
  .banner .links ul li {
   margin-bottom: 30px;
 }
-.iframe{
+.calender {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Baloo Paaji 2', cursive
+	width: 15%;
+	
+}
+h2{
+	font-size: 25px;
+	font-weight: 300px;
+	color: #536976;
+}
+iframe{
 	margin-top: 10px;
+	margin-left: 60px;
 }
 </style>
 <body>
 	<div class="banner">
-	<h1> ONE FAMILY </h1>
+	<h1> FAMILY </h1>
   <div class="links">
     <ul>
+      <li><a href="index.html"> Home</a></li>
       <li><a href="Gallery.html"> Gallery </a></li>
       <li><a href="Calendar.html"class="active"> Calendar </a></li>
       <li><a href="Media.html" >Video/Audio</a></li>
@@ -106,7 +129,7 @@ iframe{
     </ul>
   </div>
 </div>
-<h2>Calender</h2>
+<h2 class="calendar">Calendar</h2>
 
 <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Africa%2FLagos&amp;src=ZGFtaWxhcmVzaGluYWF5b0BnbWFpbC5jb20&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=ZW4ubmcjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%237986CB&amp;color=%237986CB&amp;color=%23009688" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 <a target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=YzRwamlkMW82aGhtNmI5bDcwc21jYjlrNnBqM2NiOW82NG9qMmI5bDcxaGplZGhuY2NyMzhvOW82byBkYW1pbGFyZXNoaW5hYXlvQG0&amp;tmsrc=damilareshinaayo%40gmail.com"><img border="0" src="https://www.google.com/calendar/images/ext/gc_button1_en.gif"></a>
